@@ -1,0 +1,178 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+$primary-color: pink;
+
+// We use these to control header font styles
+$font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$font-weight: normal;
+$font-style: normal;
+$font-color: #222;
+$line-height: 1.4;
+$top-margin: .2rem;
+$bottom-margin: .5rem;
+$text-rendering: optimizeLegibility;
+
+// We use these to control header font sizes
+$h1-font-size: 36px;
+$h2-font-size: 30px;
+$h3-font-size: 24px;
+$h4-font-size: 18px;
+$h5-font-size: 14px;
+$h6-font-size: 12px;
+
+body{
+	font-family: $font-family;
+	font-style: $font-style;
+	font-color: $font-color;
+}
+
+
+
+h1{font-size: $h1-font-size;}
+h2{font-size: $h2-font-size;}
+h3{font-size: $h3-font-size;}
+h4{font-size: $h4-font-size;}
+h5{font-size: $h5-font-size;}
+h6{font-size: $h6-font-size;}
+
+h1,h2,h3,h4,h5,h6{
+	padding: 15px 0;
+}
+
+p{
+	margin: 0 0 10px;
+}
+
+small{
+font-size: 85%;
+}
+
+b, strong {
+font-weight: 700;
+}
+
+i, em{
+	font-style: italic;
+}
+
+a{
+	color: cornflowerblue;
+	&:hover{color:pink;}
+}
+ol, ul {
+  	margin-top: 0;
+	margin-bottom: 10px;
+	line-height: 1.6;
+  list-style-type: none;
+  counter-reset: section;
+  margin-left: 3rem;
+}
+ol { 
+  list-style-type:cjk-ideographic;
+}
+ul { 
+  list-style-type: hebrew;
+}
+
+
+
+// TABLES
+
+thead{
+	border-bottom: 1px solid #222;
+	th{
+		padding: 0.5em;
+		font-weight: bold;
+	}
+}
+tr{
+	border-bottom: 1px solid #f1f1f1;
+}
+
+td{
+	padding: 0.5em;
+}
+
+// FORM
+
+
+label{ 
+	display: block;
+	min-width: 2em;
+}
+input, textarea{
+	border: 1px solid #f1f1f1;
+	-webkit-box-shadow: inset 0 7px 7px -7px #dcdcdc;
+	box-shadow: inset 0 7px 7px -7px #dcdcdc;
+	padding: 6px;
+}
+
+
+button{
+    background-color: cornflowerblue;
+    background-image: -webkit-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+    background-image:    -moz-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+    background-image:     -ms-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+    background-image:      -o-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+    background-image:         linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+    border: none;
+    border-radius: .5em;
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.2),
+                inset 0 2px 0 hsla(0,0%,100%,.1),
+                inset 0 1.2em 0 hsla(0,0%,100%,0.1),
+                inset 0 -.2em 0 hsla(0,0%,100%,.1),
+                inset 0 -.25em 0 hsla(0,0%,0%,.25),
+                0 .25em .25em hsla(0,0%,0%,.05);
+    color: #444;
+    cursor: pointer;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0 .5em 1em;
+    padding: .5em 1.5em .75em;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 1px 1px hsla(0,0%,100%,.25);
+    vertical-align: middle;
+}
+button:hover {
+    outline: none;
+}
+button:hover,
+button:focus {
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.2),
+                inset 0 2px 0 hsla(0,0%,100%,.1),
+                inset 0 1.2em 0 hsla(0,0%,100%,.1),
+                inset 0 -.2em 0 hsla(0,0%,100%,.1),
+                inset 0 -.25em 0 hsla(0,0%,0%,.25),
+                inset 0 0 0 3em hsla(0,0%,100%,.2),
+                0 .25em .25em hsla(0,0%,0%,.05);
+}
+button:active {
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.2),
+                inset 0 2px 0 hsla(0,0%,100%,.1),
+                inset 0 1.2em 0 hsla(0,0%,100%,.1),
+                inset 0 0 0 3em hsla(0,0%,100%,.2),
+                inset 0 .25em .5em hsla(0,0%,0%,.05),
+                0 -1px 1px hsla(0,0%,0%,.1),
+                0 1px 1px hsla(0,0%,100%,.25);
+    margin-top: .25em;
+    outline: none;
+    padding-bottom: .5em;
+}

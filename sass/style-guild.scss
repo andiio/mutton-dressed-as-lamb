@@ -1,0 +1,40 @@
+
+
+.style-guild{
+}
+
+.container{
+	max-width: 80rem;
+	margin: 0 auto;
+}
+
+.row{
+	width: 100%;
+	margin:0 auto;
+	display: inline-block;
+	&:after{
+		content: " ";
+		display: table;
+	}
+}
+
+.col{
+	width: 50%;
+	position: relative;
+	padding-left: 0.83333rem;
+	padding-right: 0.83333rem;
+}
+
+.col_left{
+	float: left;
+}
+
+.col_right{
+	float: right;
+}
+
+
+ .sg-heading{
+ 	color: #222;
+ 	font-size: 1.3em;
+ }
