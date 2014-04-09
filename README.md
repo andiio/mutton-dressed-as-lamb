@@ -1,7 +1,7 @@
 Mutton dressed as lamb
 ======================
 
-Basic CSS to make elements not so freaking ugly betty
+Basic CSS to reset and make elements not so freaking ugly betty
 
 
 
