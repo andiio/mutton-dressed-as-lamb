@@ -1,3 +1,8 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,10 +23,11 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
+/* line 22, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-
+/* line 24, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
@@ -126,11 +132,11 @@ ol, ul {
 
 /* line 84, ../sass/screen.scss */
 ol {
-  list-style-type: cjk-ideographic; }
+  list-style-type: disc; }
 
 /* line 87, ../sass/screen.scss */
 ul {
-  list-style-type: hebrew; }
+  list-style-type: square; }
 
 /* line 95, ../sass/screen.scss */
 thead {
